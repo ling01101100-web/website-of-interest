@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #F5F0E8;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #D3D3D3;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #3E2723;
+        }
+        .navbar {
+            background-color: #3E2723;
+        }
+        .hero-cafe {
+            background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center;
+            background-size: cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-text {
+            background: rgba(62, 39, 35, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            color: white;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #3E2723;
+            color: #F5F0E8;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Brew & Bean</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="bean.html" class="nav-link">Bean Origins</a></li>
+                    <li class="nav-item"><a href="brewing.html" class="nav-link">Brewing Guide</a></li>
+                    <li class="nav-item"><a href="café.html" class="nav-link active">Café Map</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-cafe">
+            <div class="conatiner text-center hero-text">
+                <h1 class="display-4 fw-bold">City Coffee Roam</h1>
+                <p class="lead">Step out to experience the unique space and aroma of every café.</p>
+            </div>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Recommended Coffee Spots</h2>
+                <div class="row g-4 rol-cols-md-3">
+                    <div>
+                        <div class="card p-4">
+                            <h4>Vintage House Cafe</h4>
+                            <p>A hidden gem in the alleys. Perfect pairings of pour-over coffee and handmade desserts.</p>
+                            <span class="badge bg-secondary">Retro Style</span>
+                            <span class="badge bg-secondary">Quiet Workspace</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card p-4">
+                            <h4>Minimalism</h4>
+                            <p>Pure white spce with floor-to-ceiling windows. Featuring light roasts and creative specialty drinks.</p>
+                            <span class="badge bg-secondary">Aesthetic Vibes</span>
+                            <span class="badge bg-secondary">Instagrammable</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card p-4">
+                            <h4>Forest Campsite</h4>
+                            <p>Outdoor style with camping chairs and pour-over kettles. Enjoy coffee aromas in nature.</p>
+                            <span class="badge bg-secondary">Glamping Vibe</span>
+                            <span class="badge bg-secondary">Pet-Friendy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-white">
+            <div class="container">
+                <h2 class="text-center mb-4">Store Location Guide</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.04443475687!2d100.3305067!3d5.410203699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac324ad7ff989%3A0x9026a05a06bba6b5!2sSweetbar%20Cafe!5e0!3m2!1sen!2smy!4v1786301564688!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 Brew & Bean. Brewing every cup with heart.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
